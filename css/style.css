@@ -77,7 +77,13 @@ a {
   line-height: 21px;
   text-transform: uppercase;
   padding: 14px 54px 15px;
-  background-color: #5A0D67;
+  background-color: #5a0d67;
+  transition: all 0.5s ease 0s;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #5a0d67;
 }
 
 .header__social {
@@ -94,4 +100,129 @@ a {
   position: absolute;
   right: 0;
   bottom: -270px;
+}
+
+.services {
+  padding-top: 300px;
+}
+
+.title {
+  color: #21062a;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  background-color: #21062a;
+  width: 80px;
+  height: 3px;
+  top: 40%;
+  margin-left: 15px;
+}
+
+.services__inner {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.services__content {
+  flex-basis: 505px;
+  margin-right: 96px;
+}
+
+.services__content-box {
+}
+
+.services__content-title {
+  color: #5a0d67;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.services__content-textbox {
+  margin-bottom: 57px;
+}
+
+.services__content-text {
+  margin-bottom: 12px;
+}
+
+.button--decor {
+  margin-top: -7px;
+  color: #fff;
+  position: relative;
+}
+
+.button--decor::after {
+  content: "ЖМИ";
+  color: #c4c4c4;
+  position: absolute;
+  margin-left: 130px;
+}
+
+.button--decor::before {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: #c4c4c4;
+  position: absolute;
+  top: 45%;
+  right: -75px;
+}
+
+.services__list {
+  counter-reset: my-counter;
+}
+
+.services__item {
+  counter-increment: my-counter;
+  border: 2px solid #c4c4c4;
+  margin-bottom: 12px;
+  width: 450px;
+  padding: 10px 15px 10px 113px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+.services__item::before {
+  content: "0" counter(my-counter);
+  position: absolute;
+  left: 20px;
+  color: #c4c4c4;
+  transform: rotate(-90deg);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+}
+
+.services__item:hover {
+  border: 2px solid #5a0d67;
+  width: 500px;
+}
+
+.services__item:hover .services__item-title {
+  color: #5a0d67;
+}
+
+.services__item:hover::before {
+  color: #5a0d67;
+}
+
+.services__item-title {
+  color: #2c2b2b;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
 }
