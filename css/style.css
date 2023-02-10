@@ -3,6 +3,11 @@
 *::before {
   box-sizing: border-box;
 }
+
+.none {
+  display: none;
+}
+
 body {
   font-family: "Oswald";
   font-style: normal;
@@ -225,4 +230,108 @@ a {
   font-weight: 300;
   font-size: 24px;
   line-height: 36px;
+}
+
+.benefits {
+  margin-bottom: 100px;
+}
+
+.benefits__inner {
+  display: flex;
+}
+
+.benefits__image {
+  margin-right: 95px;
+}
+
+.benefits__content {
+  width: 100%;
+}
+
+.benefits__title {
+  margin-left: 185px;
+}
+
+.benefits__list {
+  background-color: #21062a;
+  color: #fff;
+  padding: 25px 0 25px 185px;
+}
+
+.benefits__item {
+  width: 320px;
+  margin-bottom: 20px;
+}
+
+.benefits__item-num {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.benefits__item-title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.benefits__item-text {
+  color: #c4c4c4;
+}
+
+.carousel {
+  margin-bottom: 100px;
+}
+
+.carousel__inner {
+  margin: 0 -7px;
+}
+
+.carousel__item {
+  margin: 0 7px;
+}
+
+.carousel__item-box {
+  border: 1px solid #c4c4c4;
+  padding: 6px 6px 16px 6px;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  /* cursor: pointer; */
+}
+
+.carousel__item-box:hover {
+  color: #fff;
+  background-color: #5a0d67;
+  border: 1px solid #5a0d67;
+}
+
+.carousel__item-img {
+  max-width: 100%;
+  margin-bottom: 23px;
+}
+
+.carousel__item-title {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.carousel .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+  margin-top: 50px;
+}
+
+.carousel .slick-dots button {
+  font-size: 0;
+  border: none;
+  background-color: #c4c4c4;
+  width: 50px;
+  height: 1px;
+}
+
+.carousel .slick-dots .slick-active button {
+  background-color: #5a0d67;
+  height: 3px;
 }
