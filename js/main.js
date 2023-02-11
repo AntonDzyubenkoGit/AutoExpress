@@ -14,5 +14,22 @@ $(function () {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 841,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 601,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          // centerMode: true,
+          // variableWidth: true,
+        },
+      },
+    ],
   });
 });

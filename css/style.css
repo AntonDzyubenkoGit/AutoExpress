@@ -4,12 +4,10 @@
   box-sizing: border-box;
 }
 
-.none {
-  display: none;
-}
 html {
   height: 100%;
 }
+
 body {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -29,6 +27,14 @@ a {
   display: inline-block;
 }
 
+img {
+  max-width: 100%;
+}
+
+.none {
+  display: none;
+}
+
 .container {
   max-width: 1220px;
   margin: 0 auto;
@@ -42,6 +48,8 @@ a {
   background-size: cover;
   min-height: 700px;
   color: #fff;
+
+  flex: 0 0 auto;
 }
 
 .header__top {
@@ -416,4 +424,239 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 100px;
+}
+
+/* -----Media-queries---------------------------------------------------------------- */
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1140px) {
+  .services__item:hover {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__images {
+    width: 80%;
+  }
+  .services {
+    padding-top: 250px;
+  }
+  .services__inner {
+    flex-wrap: wrap;
+  }
+  .services__list {
+    order: -1;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .services__item {
+    width: 100%;
+  }
+  .services__item:hover {
+    width: 100%;
+  }
+  .services__content {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  .benefits__image {
+    display: none;
+  }
+  .benefits__title {
+    margin-left: 0;
+  }
+  .contacts {
+    margin-bottom: 50px;
+  }
+  .contacts__inner {
+    display: block;
+  }
+  .contacts__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .contacts__title {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .contacts__input {
+    width: 100%;
+  }
+  .contacts__btn {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .phone {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .header__title {
+    font-size: 54px;
+    line-height: 74px;
+  }
+  .header__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .header__social {
+    padding: 30px 0 20px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits__inner {
+    /* text-align: center; */
+  }
+  .benefits__list {
+    padding: 25px 15px;
+  }
+  .benefits__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    padding: 20px 0;
+  }
+  .footer__social{
+    width: 100%;
+    justify-content: center;
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .header__content {
+    padding-top: 0;
+    text-align: center;
+  }
+  .header__social {
+    padding: 30px 0 20px;
+    justify-content: center;
+  }
+  .services {
+    padding-top: 150px;
+  }
+  .title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .title::after {
+    display: none;
+  }
+  .services__item::before {
+    top: 5px;
+  }
+  .benefits__item-num {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .benefits__item-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .carousel .slick-dots {
+    gap: 0 10px;
+    margin-top: 30px;
+  }
+  .carousel .slick-dots button {
+    width: 15px;
+  }
+  .carousel__item-img {
+    width: 100%;
+  }
+  .contacts__form {
+    padding: 30px 25px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header__top {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logo {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .header__title {
+    margin-bottom: 20px;
+  }
+  .header__images {
+    position: static;
+    width: 100%;
+  }
+  .services {
+    padding-top: 50px;
+  }
+  .services__item {
+    padding: 10px 15px 10px 60px;
+  }
+  .services__item::before {
+    left: 11px;
+  }
+  .services__inner,
+  .benefits,
+  .carousel {
+    margin-bottom: 50px;
+  }
+  .button--decor::before {
+    right: -50px;
+  }
+  .button--decor::after {
+    margin-left: 110px;
+  }
+  .carousel .slick-dots button {
+    width: 10px;
+  }
+  .contacts__list {
+    display: block;
+    text-align: center;
+  }
+  .contacts__btn {
+    width: 100%;
+  }
+  .footer__social{
+    width: 100%;
+    justify-content: center;
+    margin: 0 0 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .button--decor::before,
+  .button--decor::after {
+    display: none;
+  }
+  .button {
+    display: block;
+    text-align: center;
+  }
+  .contacts__form {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .header__title {
+    font-size: 45px;
+    line-height: 50px;
+  }
 }
