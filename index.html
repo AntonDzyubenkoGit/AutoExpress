@@ -7,10 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,regular" rel="stylesheet" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>AutoExpress</title>
   </head>
+
   <body>
+
     <header class="header">
       <div class="container">
         <div class="header__top">
@@ -20,9 +23,9 @@
           <a class="phone" href="tel:+0000012345678">+00 (000) 123 56 78</a>
         </div>
         <div class="header__content">
-          <h1 class="header__title">авто из сша “под ключ”</h1>
-          <h2 class="header__subtitle">ЗАКАЖИ СЕБЕ АВТО ИЗ США С ВЫГОДОЙ ДО 40%</h2>
-          <p class="header__text">Подбор, покупка, доставка, растаможка, ремонт, оформление по договору</p>
+          <h1 data-wow-delay=".5s" class="header__title wow animate__fadeInLeft">авто из сша “под ключ”</h1>
+          <h2 data-wow-delay="1s" class="header__subtitle wow animate__fadeInLeft">ЗАКАЖИ СЕБЕ АВТО ИЗ США С ВЫГОДОЙ ДО 40%</h2>
+          <p data-wow-delay="1.5s" class="header__text wow animate__fadeInLeft">Подбор, покупка, доставка, растаможка, ремонт, оформление по договору</p>
           <a class="button" href="#">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
           <div class="social header__social">
             <a class="social__link" href="#"><img class="social__img" src="./images/icon/telegram.svg" alt="telegram icon" /></a>
@@ -30,7 +33,7 @@
             <a class="social__link" href="#"><img class="social__img" src="./images/icon/telegram.svg" alt="telegram icon" /></a>
             <a class="social__link" href="#"><img class="social__img" src="./images/icon/whatsapp.svg" alt="whatsapp icon" /></a>
           </div>
-          <img class="header__images" src="./images/ford-mustang.png" alt="ford mustang" />
+          <img data-wow-delay="2s" class="header__images wow animate__fadeInUpBig" src="./images/ford-mustang.png" alt="ford mustang" />
         </div>
       </div>
     </header>
@@ -66,27 +69,27 @@
               <a class="button button--decor" href="#">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
             </div>
             <ol class="services__list">
-              <li class="services__item">
+              <li data-wow-delay="1s" class="services__item wow animate__fadeInRight">
                 <p class="services__item-title">Покупка авто</p>
                 <p class="services__item-text">Подбор автомобиля и экспертная проверка</p>
               </li>
-              <li class="services__item">
+              <li data-wow-delay="1.2s" class="services__item wow animate__fadeInRight">
                 <p class="services__item-title">Доставка морем</p>
                 <p class="services__item-text">Расчет оптимальной стоимости доставки авто</p>
               </li>
-              <li class="services__item">
+              <li data-wow-delay="1.4s" class="services__item wow animate__fadeInRight">
                 <p class="services__item-title">Растаможка авто</p>
                 <p class="services__item-text">Прохождение таможенного оформления (2-3 дня)</p>
               </li>
-              <li class="services__item">
+              <li data-wow-delay="1.6s" class="services__item wow animate__fadeInRight">
                 <p class="services__item-title">Ремонт авто</p>
                 <p class="services__item-text">Комплексный ремонт автомобиля на СТО</p>
               </li>
-              <li class="services__item">
+              <li data-wow-delay="1.8s" class="services__item wow animate__fadeInRight">
                 <p class="services__item-title">Сертификация</p>
                 <p class="services__item-text">Услуга предоставляется по желанию</p>
               </li>
-              <li class="services__item">
+              <li data-wow-delay="2s" class="services__item wow animate__fadeInRight">
                 <p class="services__item-title">Постановка на учет</p>
                 <p class="services__item-text">Оформление автомобиля в стране</p>
               </li>
@@ -98,7 +101,7 @@
       <section class="benefits">
         <div class="container">
           <div class="benefits__inner">
-            <img class="benefits__image" src="./images/car.png" alt="image auto" />
+            <img data-wow-delay="2s"  class="benefits__image  wow animate__fadeInUp" src="./images/car.png" alt="image auto" />
             <div class="benefits__content">
               <h2 class="title benefits__title">Почему мы?</h2>
               <ul class="benefits__list">
@@ -282,6 +285,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
